@@ -27,7 +27,7 @@ export const Login = () => {
             headers: { "Content-Type" : "application/json" }
         })
             .then((res) => res.json())
-            .then((res) => login(res.token));
+            .then((res) => login(res.token,username));
 
         
     }
